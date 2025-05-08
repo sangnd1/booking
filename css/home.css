@@ -48,5 +48,6 @@ body {
 @media (max-width: 575.98px) {
   .custom-font {
     margin-bottom: 1rem !important;
+    font-size: 2em;
   }
 }
