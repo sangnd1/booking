@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東山ちたる予約</title>
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div class="booking-container">
+        <div class="booking-form">
+            <h2>宿泊予約</h2>
+            <form>
+                <div class="form-group">
+                    <label>宿泊施設 <span class="required">*</span></label>
+                    <select>
+                        <option value="">宿泊施設を選択してください</option>
+                        <option value="東山ちたる">東山ちたる</option>
+                        <option value="ゲストハウス 金とと">ゲストハウス 金とと</option>
+                        <option value="コパン駅西本町">コパン駅西本町</option>
+                        <option value="ハミングバード堀川町">ハミングバード堀川町</option>
+                        <option value="カミンKanazawaPrivateHotel">カミンKanazawaPrivateHotel</option>
+                        <option value="たまこ">たまこ</option>
+                        <option value="ひよひよ">ひよひよ</option>
+                        <option value="ばう">ばう</option>
+                        <option value="MALLOWK in Kanazawa">MALLOWK in Kanazawa</option>
+                        <option value="モンプチシャー">モンプチシャー</option>
+                        <option value="クルトン玉川">クルトン玉川</option>
+                        <option value="ピノテコロ">ピノテコロ</option>
+                        <option value="茨木ハウス">茨木ハウス</option>
+                        <option value="モースト兼六">モースト兼六</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>チェックイン日 <span class="required">*</span></label>
+                    <input type="text" id="checkin">
+                </div>
+                <div class="form-group">
+                    <label>メールアドレス <span class="required">*</span></label>
+                    <input type="email">
+                </div>
+
+                <h2>クレジットカード</h2>
+                <div class="form-group">
+                    <div class="card-logos">
+                        <img src="image/visa.png" alt="Visa">
+                        <img src="image/mastercard.png" alt="MasterCard">
+                        <img src="image/jcb.png" alt="JCB">
+                        <img src="image/amerian-express.png" alt="American Express">
+                        <img src="image/dinner-club.png" alt="Diners Club">
+                        <img src="image/discover.png" alt="Discover">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>カード番号 <span class="required">*</span></label>
+                    <div id="card-element"></div>
+                </div>
+                <div class="form-group">
+                    <label>カード名義 <span class="required">*</span></label>
+                    <input type="text" id="cardholder-name">
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit-button">予約を確定する</button>
+                </div>
+            </form>
+        </div>
+        <div class="booking-details">
+            <h2 class="service-title"></h2>
+            <img src="https://www.japan-guide.com/g18/3801_01.jpg" alt="宿泊施設" class="room-img">
+            <p class="service-description"></p>
+
+            <div class="check-info">
+                <div><b>チェックイン日:</b></div>
+                <div id="checkin-display">2025年6月15日（日）</div>
+            </div>
+            <div class="price-info">
+                <div class="grand-total"><b>合計金額</b> <span class="right">32,550円</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-icon error-icon">✕</div>
+            <h3>エラーが発生しました</h3>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-icon success-icon">✓</div>
+            <h3>予約が完了しました</h3>
+            <p>ご予約ありがとうございます。確認メールをお送りしました。</p>
+        </div>
+    </div>
+
+    <script>
+        flatpickr("#checkin", {
+            dateFormat: "Y-m-d",
+            minDate: "today"
+        });
+    </script>
+    <script src="./js/payment.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "image": "image/image_1.jpg",
+            "title": "Late checkout (until 12PM)",
+            "japaneseTitle": "レイトチェックアウト",
+            "price": 3500,
+            "description": "ご要望に添えない場合があります\nupon request but depending\non the availability on the day"
+        },
+        {
+            "id": 2,
+            "image": "image/image_2.jpg",
+            "title": "Early checkin (from 1PM)",
+            "japaneseTitle": "アーリーチェックイン",
+            "price": 3500,
+            "description": "ご要望に添えない場合があります\nupon request but depending\non the availability on the day"
+        },
+        {
+            "id": 3,
+            "image": "image/image_3.jpg",
+            "title": "RESTAURANT RESEVATION",
+            "japaneseTitle": "レストラン予約代行",
+            "price": 2000,
+            "description": "説明文"
+        },
+        {
+            "id": 4,
+            "image": "image/image_4.jpg",
+            "title": "Reserve the bus to SHIRAKAWAGO",
+            "japaneseTitle": "白川郷バス予約代行",
+            "price": 2000,
+            "description": "説明文"
+        },
+        {
+            "id": 5,
+            "image": "image/image_5.jpg",
+            "title": "Ta-q-bin collection",
+            "japaneseTitle": "宅急便受け取り代行",
+            "price": 2000,
+            "description": "説明文"
+        },
+        {
+            "id": 6,
+            "image": "image/image_6.jpg",
+            "title": "Go shoppig for you at Grocery/Convenience store",
+            "japaneseTitle": "買い物代行",
+            "price": 2000,
+            "description": "説明文"
+        },
+        {
+            "id": 7,
+            "image": "image/image_7.jpg",
+            "title": "RESTAURANT RESEVATION",
+            "japaneseTitle": "鍋セット",
+            "price": 2000,
+            "description": "説明文"
+        },
+        {
+            "id": 8,
+            "image": "image/image_8.jpg",
+            "title": "Room cleaning, linens &towels exchange",
+            "japaneseTitle": "滞在中の清掃･リネン交換",
+            "price": 3000,
+            "description": "説明文"
+        }
+    ]
+} 
