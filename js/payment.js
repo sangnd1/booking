@@ -8,7 +8,7 @@ let currentService = null;
 
 async function loadServiceData() {
     try {
-        const response = await fetch('/booking/data/services.json');
+        const response = await fetch('/data/services.json');
         const data = await response.json();
         serviceData = data.services;
         updateBookingDetails();
@@ -229,7 +229,7 @@ form.addEventListener('submit', async function(event) {
             submitButton.textContent = '予約を確定する';
         } else {
             // Send paymentMethod.id to your server
-            const response = await fetch('https://script.google.com/macros/s/AKfycbyJtEtE9sUKXcUrUTW13k_CXeUbuc2pDjGIaObrnmf6LloVyVO2p34IxysUJwwHBVqT/exec', {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbwh4vCDyZaKYJaxxFWjf1JsGUKI2jlBSGvLF7-J4uxA6I_590Y_7SzpLlOf4l15NbbH/exec', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'text/plain; charset=utf-8'

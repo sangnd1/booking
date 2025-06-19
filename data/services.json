@@ -6,7 +6,8 @@
             "title": "Late checkout (until 12PM)",
             "japaneseTitle": "レイトチェックアウト",
             "price": 3500,
-            "description": "ご要望に添えない場合があります\nupon request but depending\non the availability on the day"
+            "description": "ご要望に添えない場合があります\nupon request but depending\non the availability on the day",
+            "type": "conciergePaidService"
         },
         {
             "id": 2,
@@ -14,7 +15,8 @@
             "title": "Early checkin (from 1PM)",
             "japaneseTitle": "アーリーチェックイン",
             "price": 3500,
-            "description": "ご要望に添えない場合があります\nupon request but depending\non the availability on the day"
+            "description": "ご要望に添えない場合があります\nupon request but depending\non the availability on the day",
+            "type": "conciergePaidService"
         },
         {
             "id": 3,
@@ -22,7 +24,8 @@
             "title": "RESTAURANT RESEVATION",
             "japaneseTitle": "レストラン予約代行",
             "price": 2000,
-            "description": "説明文"
+            "description": "説明文",
+            "type": "conciergePaidService"
         },
         {
             "id": 4,
@@ -30,7 +33,8 @@
             "title": "Reserve the bus to SHIRAKAWAGO",
             "japaneseTitle": "白川郷バス予約代行",
             "price": 2000,
-            "description": "説明文"
+            "description": "説明文",
+            "type": "conciergePaidService"
         },
         {
             "id": 5,
@@ -38,7 +42,8 @@
             "title": "Ta-q-bin collection",
             "japaneseTitle": "宅急便受け取り代行",
             "price": 2000,
-            "description": "説明文"
+            "description": "説明文",
+            "type": "otherConciergePaidService"
         },
         {
             "id": 6,
@@ -46,7 +51,8 @@
             "title": "Go shoppig for you at Grocery/Convenience store",
             "japaneseTitle": "買い物代行",
             "price": 2000,
-            "description": "説明文"
+            "description": "説明文",
+            "type": "otherConciergePaidService"
         },
         {
             "id": 7,
@@ -54,7 +60,8 @@
             "title": "RESTAURANT RESEVATION",
             "japaneseTitle": "鍋セット",
             "price": 2000,
-            "description": "説明文"
+            "description": "説明文",
+            "type": "otherConciergePaidService"
         },
         {
             "id": 8,
@@ -62,7 +69,35 @@
             "title": "Room cleaning, linens &towels exchange",
             "japaneseTitle": "滞在中の清掃･リネン交換",
             "price": 3000,
-            "description": "説明文"
+            "description": "説明文",
+            "type": "otherConciergePaidService"
+        },
+        {
+            "id": 9,
+            "image": "image/taxi.png",
+            "title": "Reserve the taxi",
+            "japaneseTitle": "タクシー手配",
+            "price": 3000,
+            "description": "説明文",
+            "type": "freeService"
+        },
+        {
+            "id": 10,
+            "image": "image/ta-q-bin.jpg",
+            "title": "Pick up with ta-q-bin",
+            "japaneseTitle": "宅急便ピックアップ依頼",
+            "price": 3000,
+            "description": "説明文",
+            "type": "freeService"
+        },
+        {
+            "id": 11,
+            "image": "image/post.png",
+            "title": "Forgotten items by post",
+            "japaneseTitle": "忘れ物配達手配/F",
+            "price": 3000,
+            "description": "説明文",
+            "type": "freeService"
         }
     ]
 } 
